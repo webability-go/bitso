@@ -9,8 +9,12 @@ import (
 	"github.com/webability-go/bitso/websocket"
 )
 
+const VERSION = "0.0.2"
+
+var DEVEL = false
+
 func NewPublicAPI() *public.API {
-	return &public.API{}
+	return public.NewAPI(DEVEL)
 }
 
 func NewPrivateAPI() *private.API {

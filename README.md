@@ -11,10 +11,21 @@ Manuals are available on godoc.org [![GoDoc](https://godoc.org/github.com/webabi
 
 TO DO:
 ======
-- Anything (!)
+- public API REST done
+Missing:
+- Private API REST
+- REMITTANCE API
+- TRANSFER API
+- WEBHOOK API
+- WEBSOCKET service
 
 Version Changes Control
 =======================
+
+v0.0.2 - 2020-01-03
+- public::AvailableBooks() implemented
+- public::Tickers() implemented
+- public::Ticker(book) implemented
 
 v0.0.1 - 2020-01-01
 - First release
