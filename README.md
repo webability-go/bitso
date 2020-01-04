@@ -11,9 +11,11 @@ Manuals are available on godoc.org [![GoDoc](https://godoc.org/github.com/webabi
 
 TO DO:
 ======
-- public API REST done
-Missing:
+Done:
+- public API REST
+Working:
 - Private API REST
+Missing:
 - REMITTANCE API
 - TRANSFER API
 - WEBHOOK API
@@ -21,6 +23,15 @@ Missing:
 
 Version Changes Control
 =======================
+
+v0.1.0 - 2020-01-04
+- Remastered the full code under a unique API structure
+- public access services are finished
+- private access is implemented
+- private access services working:
+  - AccountStatus
+  - AccoutBalance
+  - Fees
 
 v0.0.2 - 2020-01-03
 - public::AvailableBooks() implemented
