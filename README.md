@@ -13,8 +13,10 @@ TO DO:
 ======
 Done:
 - public API REST
+
 Working:
 - Private API REST
+
 Missing:
 - REMITTANCE API
 - TRANSFER API
