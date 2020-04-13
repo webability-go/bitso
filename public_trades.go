@@ -54,7 +54,7 @@ func (api *API) Trades(book string, marker string, sort string, limit int) (*Tra
 		return nil, err
 	}
 	ab := TradesResponse{}
-	// There is a but on trades: dates comes as "+0000" and not "+00:00"
+	// There is a bug on trades: dates come as "+0000" and not "+00:00"
 	data = []byte(strings.Replace(string(data), "+0000", "+00:00", -1))
 	err = json.Unmarshal(data, &ab)
 	if err != nil {

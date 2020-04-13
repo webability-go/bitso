@@ -23,8 +23,17 @@ Missing:
 - WEBHOOK API
 - WEBSOCKET service
 
+Notes on BITSO API bugs:
+- On public trades and user trades, the date created_at is NOT an ISO 8601 timestamp (+0000 instead of +00:00 at the end)
+- On user trades, "tid" field is string, not long as stated on API Manuals
+
 Version Changes Control
 =======================
+
+v0.1.1 - 2020-01-17
+- private access services added:
+  - BankCodes
+  - UserTrades (missing tid parameters)
 
 v0.1.0 - 2020-01-04
 - Remastered the full code under a unique API structure

@@ -7,9 +7,9 @@ import (
 
 const (
 	// Add your key here
-	KEY = ""
+	KEY = "iHofeixtvF"
 	// Add your secret key here
-	SECRET = ""
+	SECRET = "57f5edb89e2afc4b06ad64b2475f0317"
 )
 
 func TestBitso(t *testing.T) {
@@ -53,6 +53,14 @@ func TestBitso(t *testing.T) {
 	fees, err := api.Fees()
 	fmt.Println(err)
 	fmt.Printf("%+v\n", fees)
+
+	bankcodes, err := api.BankCodes()
+	fmt.Println(err)
+	fmt.Printf("%+v\n", bankcodes)
+
+	usertrades, err := api.UserTrades(nil)
+	fmt.Println(err)
+	fmt.Printf("%+v\n", usertrades)
 
 	//	fmt.Println(api)
 }
